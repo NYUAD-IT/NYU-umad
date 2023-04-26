@@ -1,0 +1,76 @@
+#!/bin/zsh
+#
+# Copyright 2019-Present Erik Gomez.
+#
+# Licensed under the Apache License, Version 2.0 (the 'License');
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      https://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an 'AS IS' BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# If you change your daemon and agent file names, update the following two lines
+launch_agent_plist_name='com.erikng.umad'
+launch_daemon_dep_plist_name='com.erikng.umad.check_dep_record'
+launch_daemon_nag_plist_name='com.erikng.umad.trigger_nag'
+
+# Base paths
+launch_agent_base_path='Library/LaunchAgents/'
+launch_daemon_base_path='Library/LaunchDaemons/'
+base_umad_path='Library/umad/'
+
+# Load agent if installing to a running system
+if [[ $3 == "/" ]] ; then
+  # Fail the install if the admin forgets to change their paths and they don't exist.
+  if [ ! -e "$3${launch_daemon_base_path}${launch_daemon_dep_plist_name}.plist" ] || [ ! -e "$3${launch_daemon_base_path}${launch_daemon_nag_plist_name}.plist" ] || [ ! -e "$3${launch_agent_base_path}${launch_agent_plist_name}.plist" ]; then
+    echo "LaunchAgent or Daemons missing, exiting"
+    exit 1
+  fi
+
+  # Make the Log path 777 to cheat - do this before loading LaunchAgent
+  /bin/mkdir -p "$3${base_umad_path}Logs"
+  /bin/chmod -R 777 "$3${base_umad_path}Logs"
+
+  # Attempt to unload the DEP daemon if it's already loaded
+  /bin/launchctl list | /usr/bin/grep $launch_daemon_dep_plist_name
+  if [[ $? -eq 0 ]]; then
+    /bin/launchctl unload "$3${launch_daemon_base_path}${launch_daemon_dep_plist_name}.plist"
+  fi
+
+  # Attempt to unload the nag daemon if it's already loaded
+  /bin/launchctl list | /usr/bin/grep $launch_daemon_nag_plist_name
+  if [[ $? -eq 0 ]]; then
+    /bin/launchctl unload "$3${launch_daemon_base_path}${launch_daemon_nag_plist_name}.plist"
+  fi
+
+  # Enable the LaunchDaemons
+  /bin/launchctl load "$3${launch_daemon_base_path}${launch_daemon_dep_plist_name}.plist"
+  /bin/launchctl load "$3${launch_daemon_base_path}${launch_daemon_nag_plist_name}.plist"
+
+  # Current console user information
+  console_user=$(/usr/bin/stat -f "%Su" /dev/console)
+  console_user_uid=$(/usr/bin/id -u "$console_user")
+
+  # Only enable the LaunchAgent if there is a user logged in, otherwise rely on built in LaunchAgent behavior
+  if [[ -z "$console_user" ]]; then
+    echo "Did not detect user"
+  elif [[ "$console_user" == "loginwindow" ]]; then
+    echo "Detected Loginwindow Environment"
+  elif [[ "$console_user" == "_mbsetupuser" ]]; then
+    echo "Detect SetupAssistant Environment"
+  else
+    # This is a deprecated command, but until Apple kills it, it is going to be used
+    /bin/launchctl asuser "${console_user_uid}" /bin/launchctl list | /usr/bin/grep 'umad'
+    # Unload the agent so it can be triggered on re-install
+    if [[ $? -eq 0 ]]; then
+      /bin/launchctl asuser "${console_user_uid}" /bin/launchctl unload "$3${launch_agent_base_path}${launch_agent_plist_name}.plist"
+    fi
+    # Load the launch agent
+    /bin/launchctl asuser "${console_user_uid}" /bin/launchctl load "$3${launch_agent_base_path}${launch_agent_plist_name}.plist"
+  fi
+fi
