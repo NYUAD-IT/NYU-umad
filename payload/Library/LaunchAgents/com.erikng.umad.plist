@@ -13,14 +13,14 @@
 		<string>/Library/umad/Resources/umad</string>
 		<!-- Cutoff Date -->
 		<!--<string>--cutoffdate</string> -->
-		<!--<string>2018-12-31-17:00</string> -->
+		<!--<string>2023-05-18-17:00</string> -->
 		<!-- Profile Identifier -->
 		<!--<string>--profileidentifier</string> -->
 		<!--<string>B68ABF1E-70E2-43B0-8300-AE65F9AFA330</string> -->
 		<!-- -->
 		<!-- Logos -->
 		<!--<string>--logopath</string> -->
-		<!--<string>/Some/Custom/Path/company_logo.png</string> -->
+		<!--<string>/usr/local/nyuad/nyuadnudge.png</string> -->
 		<!--<string>--nagsspath</string> -->
 		<!--<string>/Some/Custom/Path/nag_ss.png</string> -->
 		<!--<string>--uasspath</string> -->
@@ -28,7 +28,7 @@
 		<!-- -->
 		<!-- Text-->
 		<!--<string>--duedatetext</string> -->
-		<!--<string>MDM Enrollment is required (No Restart Required)</string> -->
+		<!--<string>MDM Enrollment is required by May 05,2023 (No Restart Required)</string> -->
 		<!--<string>--depfailuretext</string> -->
 		<!--<string>Not getting this notification?</string> -->
 		<!--<string>--depfailuresubtext</string> -->
@@ -68,7 +68,7 @@
 		<!-- -->
 		<!-- Timers -->
 		<!--<string>--cutoffdatewarning</string> -->
-		<!--<string>3</string> -->
+		<!--<string>7</string> -->
 		<!--<string>--timerday1</string> -->
 		<!--<string>600</string> -->
 		<!--<string>--timerday3</string> -->
