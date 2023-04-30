@@ -62,7 +62,7 @@
 		<!-- -->
 		<!-- URLs -->
 		<!--<string>--manualenrollmenturl</string> -->
-		<!--<string>https://apple.com</string> -->
+		<!--<string>https://ds1688.awmdm.com/IdentityService/SAML/SamlAuthenticationServiceProvider.aspx?type=Enrollment&sid=5057edf0-4fb6-4caa-a06d-e12ae516c22b&gid=aditmx&returnurl=https://ds1688.awmdm.com/DeviceManagement/Enrollment/complete-samlAuthentication</string> -->
 		<!--<string>--moreinfourl</string> -->
 		<!--<string>https://google.com</string> -->
 		<!-- -->
