@@ -13,7 +13,7 @@
 		<string>/Library/umad/Resources/umad</string>
 		<!-- Cutoff Date -->
 		<string>--cutoffdate</string>
-		<string>2023-05-18-17:00</string>
+		<string>2023-05-31-17:00</string>
 		<!-- Profile Identifier -->
 		<!--<string>--profileidentifier</string> -->
 		<!--<string>B68ABF1E-70E2-43B0-8300-AE65F9AFA330</string> -->
@@ -28,7 +28,7 @@
 		<!-- -->
 		<!-- Text-->
 		<string>--duedatetext</string>
-		<string>MDM Enrollment is required by May 05,2023 (No Restart Required)</string>
+		<string>MDM Enrollment is required by May 31,2023 (No Restart Required)</string>
 		<!--<string>--depfailuretext</string> -->
 		<!--<string>Not getting this notification?</string> -->
 		<!--<string>--depfailuresubtext</string> -->
@@ -62,7 +62,7 @@
 		<!-- -->
 		<!-- URLs -->
 		<string>--manualenrollmenturl</string>
-		<string>https://ds1688.awmdm.com/IdentityService/SAML/SamlAuthenticationServiceProvider.aspx?type=Enrollment&sid=5057edf0-4fb6-4caa-a06d-e12ae516c22b&gid=aditmx&returnurl=https://ds1688.awmdm.com/DeviceManagement/Enrollment/complete-samlAuthentication</string>
+		<string>https://tinyurl.com/ws1enroll</string>
 		<string>--moreinfourl</string>
 		<string>https://www.nyu.edu/life/information-technology/safe-computing/protect-your-privacy/secure-your-computers.html</string>
 		<!-- -->
