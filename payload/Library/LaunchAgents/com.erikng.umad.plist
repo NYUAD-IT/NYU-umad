@@ -22,9 +22,9 @@
 		<string>--logopath</string>
 		<string>/usr/local/nyuad/nyuadnudge.png</string>
 		<!--<string>--nagsspath</string> -->
-		<!--<string>/Some/Custom/Path/nag_ss.png</string> -->
+		<string>/usr/local/nyuad/nag_ss.png</string>
 		<!--<string>--uasspath</string> -->
-		<!--<string>/Some/Custom/Path/uamdm_ss.png</string> -->
+		<string>/usr/local/nyuad/uamdm.png</string>
 		<!-- -->
 		<!-- Text-->
 		<string>--duedatetext</string>
