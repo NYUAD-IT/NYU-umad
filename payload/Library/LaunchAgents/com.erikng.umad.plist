@@ -12,23 +12,23 @@
 	<array>
 		<string>/Library/umad/Resources/umad</string>
 		<!-- Cutoff Date -->
-		<string>--cutoffdate</string>
-		<string>2023-05-31-17:00</string>
+		<!--<string>--cutoffdate</string> -->
+		<!--<string>2018-12-31-17:00</string> -->
 		<!-- Profile Identifier -->
 		<!--<string>--profileidentifier</string> -->
 		<!--<string>B68ABF1E-70E2-43B0-8300-AE65F9AFA330</string> -->
 		<!-- -->
 		<!-- Logos -->
-		<string>--logopath</string>
-		<string>/usr/local/nyuad/nyuadnudge.png</string>
-		<string>--nagsspath</string>
-		<string>/usr/local/nyuad/nag_ss.png</string>
-		<string>--uasspath</string>
-		<string>/usr/local/nyuad/uamdm.png</string>
+		<!--<string>--logopath</string> -->
+		<!--<string>/Some/Custom/Path/company_logo.png</string> -->
+		<!--<string>--nagsspath</string> -->
+		<!--<string>/Some/Custom/Path/nag_ss.png</string> -->
+		<!--<string>--uasspath</string> -->
+		<!--<string>/Some/Custom/Path/uamdm_ss.png</string> -->
 		<!-- -->
 		<!-- Text-->
-		<string>--duedatetext</string>
-		<string>MDM Enrollment is required by May 31,2023 (No Restart Required)</string>
+		<!--<string>--duedatetext</string> -->
+		<!--<string>MDM Enrollment is required (No Restart Required)</string> -->
 		<!--<string>--depfailuretext</string> -->
 		<!--<string>Not getting this notification?</string> -->
 		<!--<string>--depfailuresubtext</string> -->
@@ -61,20 +61,20 @@
 		<!--<string>Please go to System Preferences -> Profiles, click on the Device Enrollment profile and click on the approve button.</string> -->
 		<!-- -->
 		<!-- URLs -->
-		<string>--manualenrollmenturl</string>
-		<string>https://tinyurl.com/ws1enroll</string>
-		<string>--moreinfourl</string>
-		<string>https://www.nyu.edu/life/information-technology/safe-computing/protect-your-privacy/secure-your-computers.html</string>
+		<!--<string>--manualenrollmenturl</string> -->
+		<!--<string>https://apple.com</string> -->
+		<!--<string>--moreinfourl</string> -->
+		<!--<string>https://google.com</string> -->
 		<!-- -->
 		<!-- Timers -->
-		<string>--cutoffdatewarning</string>
-		<string>7</string>
-		<string>--timerday1</string>
-		<string>5</string>
+		<!--<string>--cutoffdatewarning</string> -->
+		<!--<string>3</string> -->
+		<!--<string>--timerday1</string> -->
+		<!--<string>600</string> -->
 		<!--<string>--timerday3</string> -->
 		<!--<string>7200</string> -->
-		<string>--timerelapsed</string>
-		<string>120</string>
+		<!--<string>--timerelapsed</string> -->
+		<!--<string>10</string> -->
 		<!--<string>--timerfinal</string> -->
 		<!--<string>60</string> -->
 		<!--<string>--timerinital</string> -->
