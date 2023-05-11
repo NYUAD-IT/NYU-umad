@@ -69,12 +69,12 @@
 		<!-- Timers -->
 		<string>--cutoffdatewarning</string>
 		<string>7</string>
-		<!--<string>--timerday1</string> -->
-		<!--<string>600</string> -->
+		<string>--timerday1</string>
+		<string>5</string>
 		<!--<string>--timerday3</string> -->
 		<!--<string>7200</string> -->
-		<!--<string>--timerelapsed</string> -->
-		<!--<string>10</string> -->
+		<string>--timerelapsed</string>
+		<string>120</string>
 		<!--<string>--timerfinal</string> -->
 		<!--<string>60</string> -->
 		<!--<string>--timerinital</string> -->
