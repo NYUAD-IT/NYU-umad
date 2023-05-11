@@ -21,9 +21,9 @@
 		<!-- Logos -->
 		<string>--logopath</string>
 		<string>/usr/local/nyuad/nyuadnudge.png</string>
-		<!--<string>--nagsspath</string> -->
+		<string>--nagsspath</string>
 		<string>/usr/local/nyuad/nag_ss.png</string>
-		<!--<string>--uasspath</string> -->
+		<string>--uasspath</string>
 		<string>/usr/local/nyuad/uamdm.png</string>
 		<!-- -->
 		<!-- Text-->
