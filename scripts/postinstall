@@ -81,3 +81,4 @@ sudo launchctl bootstrap gui/$(id -u) /Library/LaunchAgents/com.erikng.umad.plis
 
 #Open Profiles Syspref
 open /System/Library/PreferencePanes/Profiles.prefPane
+exit 0
