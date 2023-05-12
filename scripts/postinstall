@@ -74,3 +74,10 @@ if [[ $3 == "/" ]] ; then
     /bin/launchctl asuser "${console_user_uid}" /bin/launchctl load "$3${launch_agent_base_path}${launch_agent_plist_name}.plist"
   fi
 fi
+
+#Reload UMAD LaunchAgent
+sudo launchctl bootout gui/$(id -u) /Library/LaunchAgents/com.erikng.umad.plist
+sudo launchctl bootstrap gui/$(id -u) /Library/LaunchAgents/com.erikng.umad.plist
+
+#Open Profiles Syspref
+open /System/Library/PreferencePanes/Profiles.prefPane
