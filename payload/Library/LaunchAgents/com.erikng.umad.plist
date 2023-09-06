@@ -27,8 +27,6 @@
 		<string>/usr/local/nyuad/uamdm.png</string>
 		<!-- -->
 		<!-- Text-->
-		<string>--duedatetext</string>
-		<string> </string>
 		<!--<string>--depfailuretext</string> -->
 		<!--<string>Not getting this notification?</string> -->
 		<!--<string>--depfailuresubtext</string> -->
@@ -39,20 +37,22 @@
 		<!--<string>Want this box to go away?</string> -->
 		<string>--manualenrollh2text</string>
 		<string>Click Manual Enrollment button below and use GROUP ID = aditmx.</string>
+		<string>--titletext</string>
+		<string>NYUAD IT - MDM Enrollment</string>
+		<string>--subtitletext</string>
+		<string>As communicated in the email titled "Computer Management Software - Action Required".</string>
+		<string>--duedatetext</string>
+		<string>Enrollment into MDM is mandatory to ensure that NYUAD IT can protect your computer with security software.</string>
 		<string>--paragraph1</string>
 		<string>Please complete the action before the due date and it takes only 5 Minutes of your time. No restart is required.</string>
 		<string>--paragraph2</string>
 		<string>To enroll, click on the notification in the top right corner similar as per the sample image below, then click allow and provide your mac login password.</string>
 		<string>--paragraph3</string>
 		<string>Click "More Info" for guide and please contact nyuad.it@nyu.edu for issues. Thank You</string>
-		<string>--subtitletext</string>
-		<string>As communicated in the email titled "Computer Management Software - Action Required", enrollment into MDM is mandatory to ensure that NYUAD IT can protect your computer with security software.</string>
 		<!--<string>--sysprefsh1text</string> -->
 		<!--<string>Want this box to go away?</string> -->
 		<!--<string>--sysprefsh2text</string> -->
 		<!--<string>Open System Preferences and approve Device Management.</string> -->
-		<string>--titletext</string>
-		<string>NYUAD MDM Enrollment</string>
 		<!--<string>--uamdmparagraph1</string> -->
 		<!--<string>Thank you for enrolling your device into MDM. We sincerely appreciate you doing this in a timely manner.</string> -->
 		<!--<string>--uamdmparagraph2</string> -->
