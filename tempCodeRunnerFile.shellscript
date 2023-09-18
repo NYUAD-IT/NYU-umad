@@ -1,0 +1,43 @@
+#!/bin/bash
+
+# Define the SMB network share path and local mount directory
+smbShare="smb://10.229.130.203/wsone/"
+localMountDir="/tmp/smbshare"
+
+# Define the string to append
+stringToAppend="werwer,qweqw"
+
+# Mount the SMB share to the local directory
+if ! mount | grep -q "$localMountDir"; then
+    mkdir -p "$localMountDir"
+    mount -t smbfs "$smbShare" "$localMountDir"
+fi
+
+# Check if the mount was successful
+if [ $? -ne 0 ]; then
+    echo "Failed to mount the SMB share."
+    exit 1
+fi
+
+# Define the path to the CSV file on the SMB share
+csvFilePath="$localMountDir/mine.csv"
+echo "$csvFilePath"
+
+# Check if the CSV file exists
+if [ ! -f "$csvFilePath" ]; then
+    echo "CSV file does not exist."
+    umount "$localMountDir"  # Unmount the share
+    exit 1
+fi
+
+# Check if the string is already in the CSV file
+if grep -qFx "$stringToAppend" "$csvFilePath"; then
+    echo "String is already in the CSV file. Skipping."
+else
+    # Append the string to the CSV file
+    echo "$stringToAppend" >> "$csvFilePath"
+    echo "String appended to the CSV file successfully."
+fi
+
+# Unmount the SMB share
+umount "$localMountDir"

@@ -13,7 +13,7 @@
 		<string>/Library/umad/Resources/umad</string>
 		<!-- Cutoff Date -->
 		<string>--cutoffdate</string>
-		<string>2023-09-13-17:00</string>
+		<string>2023-09-22-17:00</string>
 		<!-- Profile Identifier -->
 		<!--<string>--profileidentifier</string> -->
 		<!--<string>B68ABF1E-70E2-43B0-8300-AE65F9AFA330</string> -->
@@ -31,16 +31,16 @@
 		<!--<string>Not getting this notification?</string> -->
 		<!--<string>--depfailuresubtext</string> -->
 		<!--<string>You can also enroll manually below:</string> -->
-		<!--<string>--manualenrollmenttext</string> -->
-		<!--<string>Manual Enrollment Required</string> -->
+		<string>--manualenrollmenttext</string>
+		<string>Error Loading. Please perform REBOOT to fix issue. If this error shows 2nd time please contact NYUAD IT Support for assistance</string>
 		<!--<string>--manualenrollh1text</string> -->
 		<!--<string>Want this box to go away?</string> -->
 		<string>--manualenrollh2text</string>
-		<string>Click Manual Enrollment button below and use GROUP ID = aditmx.</string>
+		<string>Click button below and use GROUP_ID :: aditmx</string>
 		<string>--titletext</string>
 		<string>NYUAD IT - MDM Enrollment</string>
 		<string>--subtitletext</string>
-		<string>As communicated in the email titled "Computer Management Software - Action Required".</string>
+		<string>As per the email you received from NYUAD IT titled "Computer Management Software - Action Required".</string>
 		<string>--duedatetext</string>
 		<string>Enrollment into MDM is mandatory to ensure that NYUAD IT can protect your computer with security software.</string>
 		<string>--paragraph1</string>
@@ -48,7 +48,7 @@
 		<string>--paragraph2</string>
 		<string>To enroll, click on the notification in the top right corner similar as per the sample image below, then click allow and provide your mac login password.</string>
 		<string>--paragraph3</string>
-		<string>Click "More Info" for guide and please contact nyuad.it@nyu.edu for issues. Thank You</string>
+		<string>Click "Guide Me" for walkthrough. For concerns or issues, email us nyuad.it@nyu.edu. Thank You</string>
 		<!--<string>--sysprefsh1text</string> -->
 		<!--<string>Want this box to go away?</string> -->
 		<!--<string>--sysprefsh2text</string> -->

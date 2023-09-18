@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="22154" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment version="1090" identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="22154"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner"/>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <window title="umad" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="QvC-M9-y7g">
+        <window title="umad" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" fullSizeContentView="YES"/>
             <rect key="contentRect" x="0.0" y="0.0" width="800" height="450"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1415"/>
             <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="800" height="450"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <textField identifier="field.paragraph1" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i9y-zv-f94">
-                        <rect key="frame" x="300" y="279" width="475" height="49"/>
+                        <rect key="frame" x="300" y="272" width="475" height="49"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" id="Fn3-qL-8OR">
                             <font key="font" metaFont="cellTitle"/>
@@ -28,7 +28,7 @@
                         </textFieldCell>
                     </textField>
                     <textField identifier="field.paragraph3" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sw2-7z-3dN">
-                        <rect key="frame" x="300" y="200" width="485" height="49"/>
+                        <rect key="frame" x="300" y="191" width="485" height="49"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" placeholderString="To enroll, just look for the below notification, and click “Details”. Once prompted, log in with your username and password." id="4OZ-zE-F88">
                             <font key="font" metaFont="cellTitle"/>
@@ -78,10 +78,10 @@
                         </textFieldCell>
                     </textField>
                     <textField identifier="field.duedatetext" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0IP-CD-Ews">
-                        <rect key="frame" x="300" y="322" width="475" height="32"/>
+                        <rect key="frame" x="300" y="327" width="475" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" placeholderString="MDM Enrollment is required by 01/01/2018 (No Restart Required)" id="c5i-I9-ozT">
-                            <font key="font" metaFont="systemBold" size="12"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" placeholderString="MDM Enrollment is required by 01/01/2018 (No Restart Required)" id="c5i-I9-ozT">
+                            <font key="font" metaFont="cellTitle"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
@@ -108,7 +108,7 @@ DQ
                     <button identifier="button.moreinfo" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rzD-vh-8RV">
                         <rect key="frame" x="10" y="10" width="100" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <buttonCell key="cell" type="push" title="More Info" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="een-NO-IKf">
+                        <buttonCell key="cell" type="push" title="Guide Me" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="een-NO-IKf">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -197,7 +197,7 @@ DQ
                         </textFieldCell>
                     </textField>
                     <textField identifier="field.paragraph2" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0It-r9-Fq3">
-                        <rect key="frame" x="300" y="239" width="485" height="49"/>
+                        <rect key="frame" x="300" y="230" width="485" height="49"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" placeholderString="If you do not enroll into MDM you'll lose the ability to connect to Wi-Fi, VPN and Managed Software Center." id="GjV-FJ-YKv">
                             <font key="font" metaFont="cellTitle"/>
@@ -206,29 +206,29 @@ DQ
                         </textFieldCell>
                     </textField>
                     <textField identifier="field.subtitletext" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fOI-Ls-2zq">
-                        <rect key="frame" x="300" y="350" width="475" height="32"/>
+                        <rect key="frame" x="300" y="366" width="475" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" placeholderString="A friendly reminder from your local IT team" id="hEf-Zz-rpZ">
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" placeholderString="A friendly reminder from your local IT team" id="hEf-Zz-rpZ">
                             <font key="font" metaFont="cellTitle"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
                     <textField identifier="field.titletext" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tdP-cB-pof">
-                        <rect key="frame" x="300" y="390" width="475" height="49"/>
+                        <rect key="frame" x="300" y="394" width="475" height="49"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" placeholderString="MDM Enrollment" allowsEditingTextAttributes="YES" id="HSg-9C-Sp7">
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" placeholderString="MDM Enrollment" allowsEditingTextAttributes="YES" id="HSg-9C-Sp7">
                             <font key="font" metaFont="system" size="33"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
                     <textField identifier="field.manualenrollmenttext" hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mjS-OJ-mQ7">
-                        <rect key="frame" x="310" y="138" width="475" height="49"/>
+                        <rect key="frame" x="310" y="126" width="475" height="49"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" placeholderString="Manul Enrollment Required" allowsEditingTextAttributes="YES" id="rk9-zb-vmp">
-                            <font key="font" metaFont="system" size="33"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" placeholderString="Error 0x0.  Contact NYU IT Support" allowsEditingTextAttributes="YES" id="rk9-zb-vmp">
+                            <font key="font" metaFont="system" size="18"/>
+                            <color key="textColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
@@ -242,6 +242,6 @@ DQ
         <userDefaultsController representsSharedInstance="YES" id="Os4-th-lOO"/>
     </objects>
     <resources>
-        <image name="NSApplicationIcon" width="128" height="128"/>
+        <image name="NSApplicationIcon" width="32" height="32"/>
     </resources>
 </document>
