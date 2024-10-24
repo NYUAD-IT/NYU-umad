@@ -13,7 +13,7 @@
 		<string>/Library/umad/Resources/umad</string>
 		<!-- Cutoff Date -->
 		<string>--cutoffdate</string>
-		<string>2023-09-22-17:00</string>
+		<string>2023-10-16-17:00</string>
 		<!-- Profile Identifier -->
 		<!--<string>--profileidentifier</string> -->
 		<!--<string>B68ABF1E-70E2-43B0-8300-AE65F9AFA330</string> -->
@@ -29,26 +29,26 @@
 		<!-- Text-->
 		<!--<string>--depfailuretext</string> -->
 		<!--<string>Not getting this notification?</string> -->
-		<!--<string>--depfailuresubtext</string> -->
-		<!--<string>You can also enroll manually below:</string> -->
+		<string>--depfailuresubtext</string>
+		<string>Click the system clock to check or reboot mac or do manual enroll.</string>
 		<string>--manualenrollmenttext</string>
-		<string>Error Loading. Please perform REBOOT to fix issue. If this error shows 2nd time please contact NYUAD IT Support for assistance</string>
-		<!--<string>--manualenrollh1text</string> -->
-		<!--<string>Want this box to go away?</string> -->
+		<string>Manual Enrollment Required - Click Button below and use "nyuad" for the GROUP ID</string>
+		<string>--manualenrollh1text</string>
+		<string>For Support</string>
 		<string>--manualenrollh2text</string>
-		<string>Click button below and use GROUP_ID :: aditmx</string>
+		<string>Email us nyuad.it@nyu.edu or visit the IT Support Center in C2</string>
 		<string>--titletext</string>
-		<string>NYUAD IT - MDM Enrollment</string>
+		<string>NYUAD IT - Device Enrollment</string>
 		<string>--subtitletext</string>
-		<string>As per the email you received from NYUAD IT titled "Computer Management Software - Action Required".</string>
+		<string>As per the email you received from NYUAD IT and the Intranet post dated 5th October 2023 titled “Computer Management Software - Action Required”</string>
 		<string>--duedatetext</string>
-		<string>Enrollment into MDM is mandatory to ensure that NYUAD IT can protect your computer with security software.</string>
+		<string>You are required to enroll your computer in the new computer management tool to ensure compliance</string>
 		<string>--paragraph1</string>
-		<string>Please complete the action before the due date and it takes only 5 Minutes of your time. No restart is required.</string>
+		<string>You can click on the “Guide Me” button in the bottom left of this window at any time for step-by-step instructions</string>
 		<string>--paragraph2</string>
-		<string>To enroll, click on the notification in the top right corner similar as per the sample image below, then click allow and provide your mac login password.</string>
+		<string>This process only takes 5 minutes and should be completed by the due date mentioned on the left. No restart of your computer is required.</string>
 		<string>--paragraph3</string>
-		<string>Click "Guide Me" for walkthrough. For concerns or issues, email us nyuad.it@nyu.edu. Thank You</string>
+		<string>To get started, select the notification located at the upper-right corner of your screen and enter your Mac login credentials, or click the "Manual Enrollment" button below if directed to do so</string>
 		<!--<string>--sysprefsh1text</string> -->
 		<!--<string>Want this box to go away?</string> -->
 		<!--<string>--sysprefsh2text</string> -->
@@ -67,16 +67,16 @@
 		<string>https://docs.google.com/document/d/1_AKSNSMv_j23ek88ldsxnGwLeOBHxmb35DNcbQPvYyk/edit?usp=sharing</string>
 		<!-- -->
 		<!-- Timers -->
-		<string>--cutoffdatewarning</string>
-		<string>3</string>
-		<string>--timerday1</string>
-		<string>28</string>
+		<!--<string>--cutoffdatewarning</string> -->
+		<!--<string>3</string> -->
+		<!--<string>--timerday1</string> -->
+		<!--<string>600</string> -->
 		<!--<string>--timerday3</string> -->
 		<!--<string>7200</string> -->
-		<!--<string>--timerelapsed</string> -->
-		<!--<string>10</string> -->
-		<!--<string>--timerfinal</string> -->
-		<!--<string>60</string> -->
+		<string>--timerelapsed</string>
+		<string>600</string>
+		<string>--timerfinal</string>
+		<string>600</string>
 		<!--<string>--timerinital</string> -->
 		<!--<string>14400</string> -->
 		<!--<string>--timermdm</string> -->

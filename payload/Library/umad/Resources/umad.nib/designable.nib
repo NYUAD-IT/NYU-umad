@@ -12,7 +12,7 @@
         <window title="umad" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" fullSizeContentView="YES"/>
             <rect key="contentRect" x="0.0" y="0.0" width="800" height="450"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1415"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1728" height="1079"/>
             <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="800" height="450"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -59,17 +59,17 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField identifier="field.mdmenrolled" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="miP-FN-pTh">
-                        <rect key="frame" x="125" y="155" width="135" height="16"/>
+                    <textField identifier="field.mdmenrolled" hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="miP-FN-pTh">
+                        <rect key="frame" x="125" y="135" width="135" height="16"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" placeholderString="No" allowsEditingTextAttributes="YES" id="Yq6-qa-b3s">
+                        <textFieldCell key="cell" enabled="NO" sendsActionOnEndEditing="YES" alignment="right" placeholderString="*" allowsEditingTextAttributes="YES" id="Yq6-qa-b3s">
                             <font key="font" metaFont="cellTitle"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
                     <textField identifier="field.daysremaining" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gPO-y7-Dyo">
-                        <rect key="frame" x="125" y="135" width="135" height="16"/>
+                        <rect key="frame" x="125" y="155" width="135" height="16"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" placeholderString="13" allowsEditingTextAttributes="YES" id="2rE-uf-BSq">
                             <font key="font" metaFont="cellTitle"/>
@@ -156,15 +156,6 @@ DQ
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField identifier="field.mdmenrolledtext" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4ub-Lm-cLs">
-                        <rect key="frame" x="0.0" y="155" width="130" height="15"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="User Approved MDM:" id="u0n-Fg-T9F">
-                            <font key="font" metaFont="smallSystemBold"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
                     <imageView identifier="image.nagscreen" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rsE-1J-xm0">
                         <rect key="frame" x="300" y="130" width="485" height="70"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -175,9 +166,9 @@ DQ
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     </box>
                     <textField identifier="field.daysremainingtext" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZTG-gB-FjQ">
-                        <rect key="frame" x="0.0" y="135" width="130" height="15"/>
+                        <rect key="frame" x="0.0" y="155" width="130" height="15"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Days Remaining" id="xuy-kV-rSN">
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Days Remaining:" id="xuy-kV-rSN">
                             <font key="font" metaFont="smallSystemBold"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -190,8 +181,8 @@ DQ
                     <textField identifier="field.depfailuresubtext" hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S1w-gL-fiT">
                         <rect key="frame" x="300" y="50" width="485" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" placeholderString="You can also enroll manually below:" id="VYd-c3-JqY">
-                            <font key="font" metaFont="cellTitle"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" placeholderString="Click Clock " id="VYd-c3-JqY">
+                            <font key="font" size="11" name="HelveticaNeue"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
@@ -228,7 +219,16 @@ DQ
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" placeholderString="Error 0x0.  Contact NYU IT Support" allowsEditingTextAttributes="YES" id="rk9-zb-vmp">
                             <font key="font" metaFont="system" size="18"/>
-                            <color key="textColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
+                            <color key="textColor" name="systemIndigoColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField identifier="field.mdmenrolledtext" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4ub-Lm-cLs">
+                        <rect key="frame" x="0.0" y="136" width="130" height="15"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" id="u0n-Fg-T9F">
+                            <font key="font" metaFont="smallSystemBold"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
