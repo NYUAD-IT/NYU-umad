@@ -32,7 +32,7 @@
 		<string>--depfailuresubtext</string>
 		<string>Click the system clock to check or reboot mac or do manual enroll.</string>
 		<string>--manualenrollmenttext</string>
-		<string>Manual Enrollment Required - Click Button below and use "nyuad" for the GROUP ID</string>
+		<string>Auto-enroll failed. Click "Manual Enrollment" and click "Guide Me" for instructions</string>
 		<string>--manualenrollh1text</string>
 		<string>For Support</string>
 		<string>--manualenrollh2text</string>
